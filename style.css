@@ -1,15 +1,35 @@
+html, body {
+  height: 4000px;
+}
+
 body {
   background-color: black;
 }
 
+#body_div {
+  top: 0;
+  position: relative;
+    height: 200px;
+    background-color: white;
+}
+
+#banner {
+  width: 100%;
+  height: 273px;
+  background-color: black;
+  overflow: hidden;
+}
+
 h1 {
-  color: #aaaaaa;
+  color: #9984a8;
   font-family: 'Poiret One', cursive;
   font-size: 80px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 p {
@@ -20,10 +40,56 @@ p {
 
 }
 
-a {
+p.webdev {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
   color: #aaaaaa;
+  text-transform: uppercase;
+}
+
+a {
+  color: black;
   font-family: 'Poiret One', cursive;
   font-size: 40px;
   text-align: center;
   text-decoration: none;
 }
+
+#nav_bar {
+  border: 0;
+  background-color: #aaaaaa;
+  border-radius: 0px;
+  margin-bottom: 0;
+  height: 50px;
+  text-align: center;
+}
+
+.nav_links {
+  margin: 0;
+}
+
+.nav_links li {
+  display: inline-block;
+}
+
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+
+.nav_links li a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: white;
+  padding: 0 50px;
+  text-decoration: none;
+}
+
+.nav_links li a:hover {
+  color: #9984a8;
+}
+
+
+
