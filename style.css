@@ -9,8 +9,9 @@ body {
 #body_div {
   top: 0;
   position: relative;
-    height: 200px;
-    background-color: white;
+  height: 2000px;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 #banner {
@@ -21,7 +22,7 @@ body {
 }
 
 h1 {
-  color: #9984a8;
+  color: #8eb1c5;
   font-family: 'Poiret One', cursive;
   font-size: 80px;
   text-align: center;
@@ -34,10 +35,8 @@ h1 {
 
 p {
   color: #aaaaaa;
-  font-family: 'Poiret One', cursive;
   font-size: 40px;
   text-align: center;
-
 }
 
 p.webdev {
@@ -88,8 +87,26 @@ a {
 }
 
 .nav_links li a:hover {
-  color: #9984a8;
+  color: #273d55;
 }
 
+.parallax {
+  background-image: url('images/clouds.jpg');
+  height: 20%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
+#clouds {
+  overflow: hidden;
+  width: 100%;
+}
 
+p.about {
+  margin: 0;
+  padding-top: 50px;
+  font-size: 50px;
+  font-weight: bold;
+}
