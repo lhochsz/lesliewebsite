@@ -6,7 +6,7 @@ body {
   background-color: black;
 }
 
-#body_div {
+#about_div {
   top: 0;
   position: relative;
   height: 2000px;
@@ -109,4 +109,11 @@ p.about {
   padding-top: 50px;
   font-size: 50px;
   font-weight: bold;
+}
+
+@media (max-width:  979px) {
+  .x-content-band.bg-image.parallax,
+  .x-content-band.bg-pattern.parallax {
+    background-attachment: fixed !important;
+  }
 }
