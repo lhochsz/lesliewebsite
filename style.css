@@ -112,8 +112,8 @@ p.about {
 }
 
 @media (max-width:  979px) {
-  .x-content-band.bg-image.parallax,
-  .x-content-band.bg-pattern.parallax {
-    background-attachment: fixed !important;
+
+  .parallax {
+    background-image: url('images/clouds_small.jpg');
   }
 }
