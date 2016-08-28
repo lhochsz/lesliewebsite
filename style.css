@@ -1,24 +1,20 @@
-html, body {
-  height: 4000px;
-}
-
 body {
-  background-color: black;
+  background-color: white;
 }
 
 #about_div {
-  top: 0;
   position: relative;
-  height: 2000px;
   background-color: white;
   font-family: 'Poppins', sans-serif;
+  padding-top: 3em;
 }
 
 #banner {
   width: 100%;
   height: 273px;
-  background-color: black;
+  background-color: #273d55;
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -57,7 +53,6 @@ a {
 #nav_bar {
   border: 0;
   background-color: #aaaaaa;
-  border-radius: 0px;
   margin-bottom: 0;
   height: 50px;
   text-align: center;
@@ -90,30 +85,212 @@ a {
   color: #273d55;
 }
 
-.parallax {
+.parallax-1 {
   background-image: url('images/clouds.jpg');
-  height: 20%;
+  height: 15%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  margin-top: -60px;
 }
 
-#clouds {
-  overflow: hidden;
-  width: 100%;
+section.module.parallax h2 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 70px;
+  line-height: 600px;
+  font-family: 'Poppins', sans-serif, bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-p.about {
-  margin: 0;
+.aboutFlex {
+  display: flex;
+}
+
+#leslie {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  border: 3px solid #aaaaaa;
+  margin-left: 5em;
+  margin-bottom: 5em;
+}
+
+.aboutMe {
+  font-size: 20px;
+  text-align: left;
+  color: #273d55;
+  margin-right: 5em;
+}
+
+.parallax-2 {
+  background-image: url('images/clouds2.jpg');
+  height: 15%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: -60px;
+}
+
+#portfolio_div {
+  background-color: white;
+
+}
+
+#frames {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+iframe {
+  width: 47%;
+  height: 700px;
+}
+
+iframe:focus {
+    outline: none;
+}
+
+#contact_div {
+  background-color: #273d55;
+  height: 400px;
   padding-top: 50px;
-  font-size: 50px;
-  font-weight: bold;
+}
+
+.contact {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+}
+
+.parallax-3 {
+  background-image: url('images/clouds3.jpg');
+  height: 15%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: -60px;
+}
+
+@font-face {
+    font-family: 'si';
+    src: url('socicon.eot');
+    src: url('socicon.eot?#iefix') format('embedded-opentype'),
+         url('socicon.woff') format('woff'),
+         url('socicon.ttf') format('truetype'),
+         url('socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+    text-align: center;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 55px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: #999797;
+}
+
+.soc a:hover {
+    z-index: 2;
+    background-color: #8eb1c5 !important;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-email2:before {
+    content:'.';
+}
+.soc-github:before {
+    content:'Q';
+}
+.soc-twitter:before {
+    content:'a';
+}
+.soc-linkedin:before {
+    content:'j';
+}
+.soc-instagram:before {
+    content:'x';
 }
 
 @media (max-width:  979px) {
 
-  .parallax {
-    background-image: url('images/clouds_small.jpg');
+  .aboutFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #leslie {
+    width: 200px;
+    height: 200px;
+    margin-left: 0;
+  }
+
+  .aboutMe {
+    text-align: center;
+    margin-right: 0;
   }
 }
+
+

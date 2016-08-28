@@ -4,6 +4,7 @@
   <link rel='stylesheet' href='style.css' />
   <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
   <link href="https://fonts.googleapis.com/css?family=Abel|Poiret+One|Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <title>Leslie Hochsztein</title>
 
@@ -17,25 +18,64 @@
 
   <nav id="nav_bar">
     <ul class="nav_links">
-      <li><a href="/about" class="navlink">about me</a></li>
-      <li><a href="/portfolio" class="navlink">portfolio</a></li>
-      <li><a href="/contact" class="navlink">contact</a></li>
+      <li><a href="#anchor-1"
+   onclick="smoothScroll('anchor-1');" class="navlink">about me</a></li>
+      <li><a href="#anchor-2"
+   onclick="smoothScroll('anchor-2');" class="navlink">portfolio</a></li>
+      <li><a href="#anchor-3"
+   onclick="smoothScroll('anchor-3');" class="navlink">contact</a></li>
     </ul>
   </nav>
 
-  <div class="container">
-  </div>
-
-  <div class="parallax"></div>
-  <div class="mobileBackground"</div>
+    <section class="module parallax parallax-1">
+      <div class="container">
+        <h2 id="anchor-1" >About Me</h2>
+      </div>
+    </section>
 
   <div id='about_div'>
-        <p class="about">ABOUT ME</p>
         <div class="aboutFlex">
-          <div clas="aboutLeft"></p>
-          <div class="aboutRight"></p>
+          <div class="aboutLeft"><img src="images/leslie.jpg" id="leslie" ></div>
+          <div class="aboutRight">
+            <p class="aboutMe">I'm a web developer, a communicator and a creative based in Atlanta, GA.</p>
+            <p class="aboutMe">I'm passionate about figuring out the best way to build things. With my background in entertainment public relations, marketing, and journalism, I can take it a step further with a client or consumer in mind.</p>
+            <p class="aboutMe">I've been involved in the arts, particularly dance, art and film, throughout my life. I tie everything together with creativity.</p>
+          </div>
         </div>
   </div>
+
+      <section class="module parallax parallax-2">
+      <div class="container">
+        <h2>Portfolio</h2>
+      </div>
+    </section>
+
+  <div id="portfolio_div">
+    <h2 id="anchor-2"></h2>
+    <div id="frames">
+      <iframe src="https://lhochsz.github.io/Simone/" frameborder="0"></iframe>
+      <iframe src="http://neighbor-food.herokuapp.com/" frameborder="0"></iframe>
+    </div>
+  </div>
+
+    <section class="module parallax parallax-3">
+      <div class="container">
+        <h2>Contact</h2>
+      </div>
+    <h2 id="anchor-3"></h2>
+    </section>
+
+    <div id="contact_div">
+            <p class="contact">Let's Connect!</p>
+            <p class="contact">Please feel free to contact me via email or social media.</p>
+              <ul class="soc">
+                <li><a class="soc-email2" href="mailto:lhochsz@gmail.com"></a></li>
+                <li><a class="soc-github" href="https://github.com/lhochsz"></a></li>
+                <li><a class="soc-twitter" href="http://www.twitter.com/lhochsz"></a></li>
+                <li><a class="soc-linkedin" href="https://www.linkedin.com/in/lesliehochsztein"></a></li>
+                <li><a class="soc-instagram soc-icon-last" href="https://www.instagram.com/lhochsz/"></a></li>
+              </ul>
+    </div>
 
   <script type="text/javascript" src="lib/jquery.min.js"></script>
   <script type="text/javascript" src="script.js" defer></script>
